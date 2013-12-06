@@ -15,7 +15,7 @@
     <file path="/views.py" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386269413692" ignored="false" />
     <file path="/run.py" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386270910991" ignored="false" />
     <file path="/stats.py" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386366324534" ignored="false" />
-    <file path="/transfer_data.py" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386369153206" ignored="false" />
+    <file path="/transfer_data.py" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386369811995" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +47,7 @@
       <file leaf-file-name="transfer_data.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/transfer_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="0" selection-start="1846" selection-end="1846" vertical-scroll-proportion="1.6522678">
+            <state line="60" column="0" selection-start="2088" selection-end="2088" vertical-scroll-proportion="0.83801293">
               <folding>
                 <element signature="e#25#59#0" expanded="true" />
               </folding>
@@ -508,7 +508,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/transfer_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="0" selection-start="1846" selection-end="1846" vertical-scroll-proportion="1.6522678">
+        <state line="60" column="0" selection-start="2088" selection-end="2088" vertical-scroll-proportion="0.83801293">
           <folding>
             <element signature="e#25#59#0" expanded="true" />
           </folding>
