@@ -52,7 +52,7 @@ def transfer(start, end):
 
 
 def run(days = 0):
-    transfer(str(int(time.time() - 7*24*3600)), str(int(time.time())) )
+    transfer(str(int(time.time() - days*24*3600)), str(int(time.time())) )
 
 
-run()
+run(days = 7)
