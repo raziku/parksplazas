@@ -4,7 +4,6 @@ from open_gis import get_all_parks
 import pymongo
 import copy
 from shapely.geometry import Point
-from sklearn.feature_extraction.text import CountVectorizer
 import time
 
 
@@ -53,10 +52,9 @@ def transfer(start, end):
 
 def run(days = 0):
     current_time = int(time.time())
-    for i in range(days*24):
-        transfer(str(current_time - (i+1)*3600), str(current_time - i*3600) )
-
-    #transfer(str(int(time.time() - days*24*3600)), str(int(time.time())) )
+    # Runs every hour
+    transfer(str(current_time - 3600*1.5), str(current_time - 3600*1.5) )
 
 
-run(days = 7)
+
+run()
