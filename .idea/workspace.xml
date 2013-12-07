@@ -26,8 +26,8 @@
     <file path="$USER_HOME$/work/social_trace/social_trace_label/annotation.csv" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386442026224" ignored="false" />
     <file path="$USER_HOME$/work/social_trace/social_trace_label/text.csv" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386442026224" ignored="false" />
     <file path="$USER_HOME$/work/social_trace/social_trace_label/surveys.csv" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386442228459" ignored="false" />
-    <file path="/pp_transfer_data.sh" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386450897640" ignored="false" />
-    <file path="/pp_compute_stats.sh" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386450891529" ignored="false" />
+    <file path="/pp_transfer_data.sh" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386451270553" ignored="false" />
+    <file path="/pp_compute_stats.sh" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386451275967" ignored="false" />
     <file path="/.gitignore" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386451010269" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +51,7 @@
       <file leaf-file-name="stats.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stats.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="46" selection-start="3219" selection-end="3219" vertical-scroll-proportion="0.0">
+            <state line="30" column="8" selection-start="812" selection-end="812" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#25#36#0" expanded="true" />
               </folding>
@@ -62,25 +62,25 @@
       <file leaf-file-name="pp_transfer_data.sh" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cron/pp_transfer_data.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="53" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
+            <state line="3" column="4" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="5" selection-start="23" selection-end="23" vertical-scroll-proportion="0.09719223">
+            <state line="3" column="5" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pp_compute_stats.sh" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="pp_compute_stats.sh" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cron/pp_compute_stats.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="31" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0">
+            <state line="3" column="4" selection-start="74" selection-end="74" vertical-scroll-proportion="0.09719223">
               <folding />
             </state>
           </provider>
@@ -165,9 +165,9 @@
         <option value="$PROJECT_DIR$/open_gis.py" />
         <option value="$PROJECT_DIR$/transfer_data.py" />
         <option value="$PROJECT_DIR$/stats.py" />
-        <option value="$PROJECT_DIR$/cron/pp_compute_stats.sh" />
-        <option value="$PROJECT_DIR$/cron/pp_transfer_data.sh" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/cron/pp_transfer_data.sh" />
+        <option value="$PROJECT_DIR$/cron/pp_compute_stats.sh" />
       </list>
     </option>
   </component>
@@ -566,32 +566,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="5" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/stats.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="46" selection-start="3219" selection-end="3219" vertical-scroll-proportion="0.0">
+        <state line="30" column="8" selection-start="812" selection-end="812" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#25#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cron/pp_compute_stats.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="31" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cron/pp_transfer_data.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="53" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
+        <state line="3" column="4" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/cron/pp_compute_stats.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="5" selection-start="23" selection-end="23" vertical-scroll-proportion="0.09719223">
+        <state line="3" column="4" selection-start="74" selection-end="74" vertical-scroll-proportion="0.09719223">
           <folding />
         </state>
       </provider>
