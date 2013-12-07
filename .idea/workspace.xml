@@ -26,7 +26,8 @@
     <file path="$USER_HOME$/work/social_trace/social_trace_label/annotation.csv" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386442026224" ignored="false" />
     <file path="$USER_HOME$/work/social_trace/social_trace_label/text.csv" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386442026224" ignored="false" />
     <file path="$USER_HOME$/work/social_trace/social_trace_label/surveys.csv" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386442228459" ignored="false" />
-    <file path="/pp_transfer_data.sh" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386443841744" ignored="false" />
+    <file path="/pp_transfer_data.sh" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386450897640" ignored="false" />
+    <file path="/pp_compute_stats.sh" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386450891529" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +72,16 @@
       <file leaf-file-name="pp_transfer_data.sh" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cron/pp_transfer_data.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="31" selection-start="101" selection-end="101" vertical-scroll-proportion="0.09719223">
+            <state line="3" column="53" selection-start="123" selection-end="123" vertical-scroll-proportion="0.09719223">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pp_compute_stats.sh" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cron/pp_compute_stats.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="31" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -154,9 +164,10 @@
         <option value="$PROJECT_DIR$/venue.py" />
         <option value="$PROJECT_DIR$/compute_summary.py" />
         <option value="$PROJECT_DIR$/open_gis.py" />
-        <option value="$PROJECT_DIR$/cron/pp_transfer_data.sh" />
         <option value="$PROJECT_DIR$/transfer_data.py" />
         <option value="$PROJECT_DIR$/stats.py" />
+        <option value="$PROJECT_DIR$/cron/pp_compute_stats.sh" />
+        <option value="$PROJECT_DIR$/cron/pp_transfer_data.sh" />
       </list>
     </option>
   </component>
@@ -383,14 +394,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="12" y="22" width="1420" height="878" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2532751" sideWeight="0.6781003" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2532751" sideWeight="0.6781003" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -465,13 +476,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/open_gis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="4" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/transfer_data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="37" selection-start="772" selection-end="772" vertical-scroll-proportion="0.0">
@@ -580,9 +584,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cron/pp_compute_stats.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="31" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cron/pp_transfer_data.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="31" selection-start="101" selection-end="101" vertical-scroll-proportion="0.09719223">
+        <state line="3" column="53" selection-start="123" selection-end="123" vertical-scroll-proportion="0.09719223">
           <folding />
         </state>
       </provider>
