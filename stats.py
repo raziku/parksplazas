@@ -23,7 +23,7 @@ def compute_stats():
     parks = get_all_parks()
     conn = pymongo.MongoClient(host='grande.rutgers.edu')
     time_window = 3600*24
-    n_days_average = 5
+    n_days_average = 7
 
     for park in parks:
         current_time = int(time.time())

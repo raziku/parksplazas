@@ -48,10 +48,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="stats.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="stats.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stats.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="8" selection-start="812" selection-end="812" vertical-scroll-proportion="0.0">
+            <state line="68" column="51" selection-start="2816" selection-end="2816" vertical-scroll-proportion="0.35205182">
               <folding>
                 <element signature="e#25#36#0" expanded="true" />
               </folding>
@@ -77,10 +77,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pp_compute_stats.sh" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="pp_compute_stats.sh" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cron/pp_compute_stats.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="4" selection-start="74" selection-end="74" vertical-scroll-proportion="0.09719223">
+            <state line="3" column="4" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -164,10 +164,10 @@
         <option value="$PROJECT_DIR$/compute_summary.py" />
         <option value="$PROJECT_DIR$/open_gis.py" />
         <option value="$PROJECT_DIR$/transfer_data.py" />
-        <option value="$PROJECT_DIR$/stats.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/cron/pp_transfer_data.sh" />
         <option value="$PROJECT_DIR$/cron/pp_compute_stats.sh" />
+        <option value="$PROJECT_DIR$/stats.py" />
       </list>
     </option>
   </component>
@@ -573,15 +573,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stats.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="8" selection-start="812" selection-end="812" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#25#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cron/pp_transfer_data.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="4" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0">
@@ -591,8 +582,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cron/pp_compute_stats.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="4" selection-start="74" selection-end="74" vertical-scroll-proportion="0.09719223">
+        <state line="3" column="4" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stats.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="51" selection-start="2816" selection-end="2816" vertical-scroll-proportion="0.35205182">
+          <folding>
+            <element signature="e#25#36#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
