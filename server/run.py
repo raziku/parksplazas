@@ -1,10 +1,7 @@
 from flask import Flask, request
 from flask.ext.restful import Resource, Api
-from open_gis import get_all_parks
 
 import pymongo
-
-all_pakrs = get_all_parks()
 
 
 app = Flask(__name__)
