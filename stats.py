@@ -87,7 +87,7 @@ def compute_stats():
 
     most_trending = []
     for n, idx in enumerate(np.argsort(trending_list)[::-1][:10]):
-        most_trending.append(park[idx].get_id())
+        most_trending.append(parks[idx].get_id())
 
     cursor_save = conn['parks_plazas']['most_trending']
     cursor_save.save({'datatype': 'most_trending', 'most_trending': most_trending, 'created_time': str(current_time)})
