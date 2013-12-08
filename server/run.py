@@ -40,8 +40,12 @@ api.add_resource(Park,
 
 class Trending(Resource):
     def get(self):
+        print 'in trending'
         conn = pymongo.MongoClient(host='grande.rutgers.edu')
-        cursor_read = conn['parks_plazas']
+        cursor_read = conn['parks_plazas']['most_trending']
+
+        trending = [t['most_trending'] for t in cursor_read.find().limit(1)]
+        return trending
 
 api.add_resource(Trending,
     '/trending', endpoint='trending')
