@@ -14,7 +14,7 @@
     <file path="/server.py" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386268280968" ignored="false" />
     <file path="/views.py" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386269413692" ignored="false" />
     <file path="/run.py" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386467116589" ignored="false" />
-    <file path="/stats.py" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386467782952" ignored="false" />
+    <file path="/stats.py" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386467828395" ignored="false" />
     <file path="/transfer_data.py" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386448440170" ignored="false" />
     <file path="/Dummy.txt" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386433140195" ignored="false" />
     <file path="$USER_HOME$/work/social_trace/social_trace_label/pull_data.py" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386442566442" ignored="false" />
@@ -51,7 +51,7 @@
       <file leaf-file-name="stats.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stats.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="32" selection-start="3567" selection-end="3567" vertical-scroll-proportion="0.93520516">
+            <state line="26" column="24" selection-start="718" selection-end="718" vertical-scroll-proportion="-1.4298056">
               <folding>
                 <element signature="e#25#36#0" expanded="true" />
               </folding>
@@ -605,7 +605,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/stats.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="32" selection-start="3567" selection-end="3567" vertical-scroll-proportion="0.93520516">
+        <state line="26" column="24" selection-start="718" selection-end="718" vertical-scroll-proportion="-1.4298056">
           <folding>
             <element signature="e#25#36#0" expanded="true" />
           </folding>
