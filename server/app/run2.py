@@ -52,11 +52,8 @@ def get_park(park_id):
 def get_trending():
     conn = pymongo.MongoClient(host='grande.rutgers.edu')
     cursor_read = conn['parks_plazas']['most_trending']
-    park_id_list = [p for p in cursor_read.find().limit(1)][0]['most_trending']
-
+    park_id_list = [p for p in cursor_read.find().limit(1)][0]['most_trending'][:3]
     print park_id_list
-
-    #park_id_list = ['M010', ]
 
     parks = []
     for park in park_id_list:
