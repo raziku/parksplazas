@@ -1,6 +1,6 @@
-from flask import Flask, request
+from flask import Flask, request, jsonify
 from flask.ext.restful import Resource, Api
-
+import json
 import pymongo
 
 
@@ -31,7 +31,6 @@ class Park(Resource):
                 }
 
 
-
 api.add_resource(Park,
     '/park/<string:park_id>', endpoint='park')
 
@@ -46,6 +45,8 @@ class Trending(Resource):
 
 api.add_resource(Trending,
     '/trending', endpoint='trending')
+
+
 
 
 
