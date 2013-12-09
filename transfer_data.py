@@ -53,8 +53,10 @@ def transfer(start, end):
 def run(days = 0):
     current_time = int(time.time())
     # Runs every hour
-    transfer(str(current_time - 3600*1.5), str(current_time - 3600*1.5) )
-
+    transfer(str(current_time - 3600*1.5), str(current_time) )
+    
+    #for h in range(72):
+    #    transfer(str(current_time - (h+1)*3600), str(current_time - h*3600))
 
 
 run()

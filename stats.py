@@ -27,10 +27,10 @@ def compute_stats():
     n_most_trending = 30
 
     trending_list = []
-
+    print 'In program'
+    current_time = int(time.time())
+    previous = current_time - time_window
     for park in parks:
-        current_time = int(time.time())
-        previous = current_time - time_window
         print current_time, previous, park.get_name(), park.get_id()
         cursor_read = conn['parks_plazas'][park.get_id()]
         #cursor_read = conn['parks_plazas']['M010']
@@ -90,7 +90,8 @@ def compute_stats():
         most_trending.append(parks[idx].get_id())
 
     cursor_save = conn['parks_plazas']['most_trending']
-    cursor_save.save({'datatype': 'most_trending', 'most_trending': most_trending, 'created_time': str(current_time)})
+    cursor_save.insert({'datatype': 'most_trending', 'most_trending': most_trending, 'created_time': str(current_time)})
     conn.close()
+    print 'Done'
 
 compute_stats()
