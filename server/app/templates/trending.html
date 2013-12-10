@@ -64,14 +64,17 @@
             cell = document.createElement("td");
             cell.setAttribute("rowspan", "2");
             cell.setAttribute("width", "135");
+            a = document.createElement("a");
+            park_id = "M101";
+            a.href = "http://localhost:5000/park/"+park_id;
             img = document.createElement('img');
             img.setAttribute("src", park_img_url);
             //img.setAttribute("src", "image/thumbnail.jpg");
             img.setAttribute("width", "135");
             img.setAttribute("height", "135");
-            cell.appendChild(img);
+            a.appendChild(img)
+            cell.appendChild(a);
             row.appendChild(cell);
-
             cell = document.createElement("td");
             cell.setAttribute("colspan", "4");
             newp = document.createElement("p");
@@ -231,6 +234,7 @@
 
 	var my_dic = {{parks|tojson}};
     var num_park_list = my_dic.length;
+    console.log(my_dic[0]);
     for (var i = 0; i < num_park_list; i++) {
     	console.log(i)
         show_stat(my_dic[i].park_name, my_dic[i].photos[0].images.standard_resolution.url, my_dic[i]);
