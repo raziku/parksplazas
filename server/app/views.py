@@ -1,11 +1,12 @@
 from flask import Flask, request, jsonify,render_template
 from flask.ext.restful import Resource, Api
 import json
+from app import app
 import pymongo
 import time
 
-app = Flask(__name__)
-api = Api(app)
+#app = Flask(__name__)
+#api = Api(app)
 
 
 
@@ -77,5 +78,5 @@ def get_park(park_id):
 
 
 
-if __name__ == '__main__':
-    app.run(debug=True)
+#if __name__ == '__main__':
+#    app.run(debug=True)
