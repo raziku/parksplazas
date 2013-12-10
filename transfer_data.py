@@ -18,6 +18,7 @@ def store_into_db(parks, data, data_type = 'photo'):
             if Point(data_point['location']['longitude'] , data_point['location']['latitude']).within(park.get_poly()):
                 data_point['datatype'] = data_type
                 data_point['_id'] = data_point['id']
+                print 'saving data point...'
                 cursor_store.save(data_point)
                 taken[n] = 1
         new_all_data = []
