@@ -24,13 +24,14 @@ def compute_stats():
     conn = pymongo.MongoClient(host='grande.rutgers.edu')
     time_window = 3600*24
     n_days_average = 7
-    n_most_trending = 30
+    n_most_trending = 100
 
     trending_list = []
     print 'In program'
     current_time = int(time.time())
     previous = current_time - time_window
-    for park in parks:
+
+    for park in parks[:3]:
         print current_time, previous, park.get_name(), park.get_id()
         cursor_read = conn['parks_plazas'][park.get_id()]
         #cursor_read = conn['parks_plazas']['M010']
@@ -68,7 +69,12 @@ def compute_stats():
             avg = np.average(cnt_by_day[1:])
             trend = cnt_by_day[0]*1.0/avg
 
-        trending_list.append(trend)
+
+
+
+        trending_list.append([trend, cnt_by_day[0], photo_keywords, tweet_keywords, park.get_name()])
+
+
         cursor_save = conn['parks_plazas'][park.get_id()]
         #cursor_save = conn['parks_plazas']['M010']
 
@@ -86,7 +92,9 @@ def compute_stats():
     print 'start trending...'
 
     most_trending = []
-    for n, idx in enumerate(np.argsort(trending_list)[::-1][:n_most_trending]):
+
+    for n, idx in enumerate(sorted(range(len(trending_list)), key = lambda x: trending_list[x][0])[:n_most_trending]):
+    #for n, idx in enumerate(np.argsort(trending_list)[::-1][:n_most_trending]):
         most_trending.append(parks[idx].get_id())
 
     cursor_save = conn['parks_plazas']['most_trending']

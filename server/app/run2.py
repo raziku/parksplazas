@@ -8,7 +8,28 @@ app = Flask(__name__)
 api = Api(app)
 
 
-def get_park_dic(park_id):
+
+@app.route('/trending', methods = ['GET'])
+def get_trending():
+    conn = pymongo.MongoClient(host='grande.rutgers.edu')
+    cursor_read = conn['parks_plazas']['most_trending']
+    park_id_list = [p for p in cursor_read.find().limit(1)][0]['most_trending']
+    print park_id_list
+
+    parks = []
+    for park in park_id_list[:3]:
+        print 'working on ', park
+        parks.append(get_single_park_dic(park))
+
+    return render_template(
+        "trending.html", parks = parks
+    )
+
+
+
+
+
+def get_single_park_dic(park_id):
     park_id = str(park_id)
     conn = pymongo.MongoClient(host='grande.rutgers.edu')
     cursor_read = conn['parks_plazas'][park_id]
@@ -40,29 +61,12 @@ def get_park_dic(park_id):
     }
     return park_dic
 
-@app.route('/park/<string:park_id>', methods = ['GET'])
+@app.route('/park/<string:park_id>', methods = ['GET', 'POST'])
 def get_park(park_id):
-    park_dic = get_park_dic(park_id)
-
+    print 'IN get'
+    park_dic = get_single_park_dic(park_id)
     return render_template("park.html",
                            park_dic = park_dic)
-
-
-@app.route('/trending', methods = ['GET'])
-def get_trending():
-    conn = pymongo.MongoClient(host='grande.rutgers.edu')
-    cursor_read = conn['parks_plazas']['most_trending']
-    park_id_list = [p for p in cursor_read.find().limit(1)][0]['most_trending'][:3]
-    print park_id_list
-
-    parks = []
-    for park in park_id_list:
-        print 'working on ', park
-        parks.append(get_park_dic(park))
-
-    return render_template(
-        "trending.html", parks = parks
-    )
 
 
 

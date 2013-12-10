@@ -8,13 +8,13 @@
     <file path="/Venue.py" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1385923690139" ignored="false" />
     <file path="/compute_summary.py" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386365242313" ignored="false" />
     <file path="/venue.py" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386274061445" ignored="false" />
-    <file path="$APPLICATION_HOME_DIR$/bin/~/PycharmProjects/GeoTopic/lda.py" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386432971123" ignored="false" />
-    <file path="/lda.py" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386431095063" ignored="false" />
-    <file path="$APPLICATION_HOME_DIR$/bin/~/PycharmProjects/GeoTopic/prepare_data.py" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386429856935" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/bin/~/PycharmProjects/GeoTopic/lda.py" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386635391500" ignored="false" />
+    <file path="/lda.py" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386635273865" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/bin/~/PycharmProjects/GeoTopic/prepare_data.py" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386630329884" ignored="false" />
     <file path="/server.py" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386268280968" ignored="false" />
     <file path="/views.py" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386269413692" ignored="false" />
     <file path="/run.py" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386603171718" ignored="false" />
-    <file path="/stats.py" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386467828395" ignored="false" />
+    <file path="/stats.py" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386645155471" ignored="false" />
     <file path="/transfer_data.py" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386448440170" ignored="false" />
     <file path="/Dummy.txt" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386516224242" ignored="false" />
     <file path="$USER_HOME$/work/social_trace/social_trace_label/pull_data.py" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386442566442" ignored="false" />
@@ -30,7 +30,7 @@
     <file path="/pp_compute_stats.sh" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386451275967" ignored="false" />
     <file path="/.gitignore" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386451010269" ignored="false" />
     <file path="/single_park.html" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386605942793" ignored="false" />
-    <file path="/run2.py" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386618731763" ignored="false" />
+    <file path="/run2.py" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386644104384" ignored="false" />
     <file path="/park.html" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386612363572" ignored="false" />
     <file path="/trending.html" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386618804392" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -75,7 +75,7 @@
       <file leaf-file-name="run2.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/app/run2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="0" selection-start="1875" selection-end="1875" vertical-scroll-proportion="0.0">
+            <state line="66" column="25" selection-start="2299" selection-end="2299" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#57#0" expanded="true" />
               </folding>
@@ -83,11 +83,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="trending.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="trending.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/app/templates/trending.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="4" selection-start="230" selection-end="230" vertical-scroll-proportion="0.175">
+            <state line="208" column="0" selection-start="7618" selection-end="7618" vertical-scroll-proportion="-3.7916667">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stats.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/stats.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="24" selection-start="870" selection-end="870" vertical-scroll-proportion="0.67808217">
+              <folding>
+                <element signature="e#25#36#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -95,7 +106,7 @@
       <file leaf-file-name="park.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/app/templates/park.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="123" column="34" selection-start="4174" selection-end="4174" vertical-scroll-proportion="-7.58">
+            <state line="254" column="33" selection-start="8911" selection-end="8911" vertical-scroll-proportion="-9.4">
               <folding />
             </state>
           </provider>
@@ -119,14 +130,14 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/cron/pp_transfer_data.sh" />
         <option value="$PROJECT_DIR$/cron/pp_compute_stats.sh" />
-        <option value="$PROJECT_DIR$/stats.py" />
         <option value="$PROJECT_DIR$/server/app/templates/single_park.html" />
         <option value="$PROJECT_DIR$/server/run.py" />
         <option value="$PROJECT_DIR$/server/run2.py" />
         <option value="$PROJECT_DIR$/server/app/templates/park.html.py" />
         <option value="$PROJECT_DIR$/server/app/templates/park.html" />
-        <option value="$PROJECT_DIR$/server/app/run2.py" />
         <option value="$PROJECT_DIR$/server/app/templates/trending.html" />
+        <option value="$PROJECT_DIR$/server/app/run2.py" />
+        <option value="$PROJECT_DIR$/stats.py" />
       </list>
     </option>
   </component>
@@ -424,11 +435,11 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2532751" sideWeight="0.8601583" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2532751" sideWeight="0.6701847" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13984169" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13984169" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -573,28 +584,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stats.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="50" selection-start="3645" selection-end="3645" vertical-scroll-proportion="0.69135803">
-          <folding>
-            <element signature="e#25#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/run.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="21" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/app/templates/park.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="34" selection-start="4174" selection-end="4174" vertical-scroll-proportion="-7.58">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -607,17 +602,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/app/run2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="1875" selection-end="1875" vertical-scroll-proportion="0.0">
+        <state line="66" column="25" selection-start="2299" selection-end="2299" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#57#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server/app/templates/park.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="254" column="33" selection-start="8911" selection-end="8911" vertical-scroll-proportion="-9.4">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/app/templates/trending.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="4" selection-start="230" selection-end="230" vertical-scroll-proportion="0.175">
+        <state line="208" column="0" selection-start="7618" selection-end="7618" vertical-scroll-proportion="-3.7916667">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stats.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="24" selection-start="870" selection-end="870" vertical-scroll-proportion="0.67808217">
+          <folding>
+            <element signature="e#25#36#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
