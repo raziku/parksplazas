@@ -52,12 +52,18 @@
         }
     </style>
     <script type="text/javascript">
-        var show_stat = function (parkname, park_img_url) {
+        var show_stat = function (park_dic) {
+            var row, cell, cellText, newp, br, font;
+
+            newp = document.createElement("p");
+            newp.setAttribute("class", "parkname");
+            cellText = document.createTextNode(park_dic.park_name)
+            newp.appendChild(cellText);
+            document.body.appendChild(newp);
 
             // creates a <table> element and a <tbody> element
             var tbl = document.createElement("table");
             var tblBody = document.createElement("tbody");
-            var row, cell, cellText, newp, br, font;
             // creates a table row
             row = document.createElement("tr");
 
@@ -65,7 +71,7 @@
             cell.setAttribute("rowspan", "2");
             cell.setAttribute("width", "135");
             img = document.createElement('img');
-            img.setAttribute("src", park_img_url);
+            img.setAttribute("src", park_dic.photos[0].images.standard_resolution.url);
             //img.setAttribute("src", "image/thumbnail.jpg");
             img.setAttribute("width", "135");
             img.setAttribute("height", "135");
@@ -73,13 +79,32 @@
             row.appendChild(cell);
 
             cell = document.createElement("td");
-            cell.setAttribute("colspan", "4");
+            cell.setAttribute("width", "450");
             newp = document.createElement("p");
-            newp.setAttribute("class", "parkname");
-            cellText = document.createTextNode(parkname);
-            //cellText = document.createTextNode("Morningside Park");
+            newp.setAttribute("class", "small");
+            cellText = document.createTextNode("PHOTO KEYWORDS FOR LAST 24 HOURS:");
             newp.appendChild(cellText);
             cell.appendChild(newp);
+
+            newp = document.createElement("p");
+            newp.setAttribute("class", "parkkeyword");
+            
+            cellText = document.createTextNode(
+                my_dic.photo_keywords[9]+", "+
+                my_dic.photo_keywords[8]+", "+
+                my_dic.photo_keywords[7]
+                );
+            newp.appendChild(cellText);
+            cell.appendChild(newp);
+
+            row.appendChild(cell);
+
+            cell = document.createElement("td");
+            cell.setAttribute("width", "45");
+            row.appendChild(cell);
+
+            cell = document.createElement("td");
+            cell.setAttribute("width", "100");
             row.appendChild(cell);
 
             // add the row to the end of the table body
@@ -89,42 +114,18 @@
             row = document.createElement("tr");
 
             cell = document.createElement("td");
-            cell.setAttribute("width", "380");
+            cell.setAttribute("width", "450");
             newp = document.createElement("p");
             newp.setAttribute("class", "small");
-            cellText = document.createTextNode("KEYWORDS FOR LAST 24 HOURS:");
+            cellText = document.createTextNode("TWITTER KEYWORDS FOR LAST 24 HOURS:");
             newp.appendChild(cellText);
             cell.appendChild(newp);
-
-            //get the data that you'll
-            var my_dic = {{park_dic|tojson}};
 
             newp = document.createElement("p");
             newp.setAttribute("class", "parkkeyword");
             
-//            console.log(my_dic.photo_keywords)
-
-/*
-            for (i=0; i<my_dic.photo_keywords.length; i++){
-                cellText = document.createTextNode(my_dic.photo_keywords[i]);
-                console.log(my_dic.photo_keywords[i])
-            }*/
-
-//            for (i=0; i<my_dic.photos.length; i++){
-//               document.createTextNode(my_dic, photos)
-//           }
-
-
-            //cellText = document.createTextNode("Party, Trash, BBQ");
             cellText = document.createTextNode(
-                my_dic.photo_keywords[9]+", "+
-                my_dic.photo_keywords[8]+", "+
-                my_dic.photo_keywords[7]
-                );
-            newp.appendChild(cellText);
-            cellText = document.createElement("br");
-            newp.appendChild(cellText);
-            cellText = document.createTextNode(
+                "from Twitter:"+
                 my_dic.tweet_keywords[9]+", "+
                 my_dic.tweet_keywords[8]+", "+
                 my_dic.tweet_keywords[7]
@@ -161,19 +162,6 @@
             cell.appendChild(newp);
             row.appendChild(cell);
 
-            cell = document.createElement("td");
-            newp = document.createElement("p");
-            newp.setAttribute("class", "small");
-            cellText = document.createTextNode(my_dic.photos.length+" photos");
-            newp.appendChild(cellText);
-            br = document.createElement("br");
-            newp.appendChild(br);
-            cellText = document.createTextNode(my_dic.tweets.length+" tweets");
-            newp.appendChild(cellText);
-            cell.appendChild(newp);
-            row.appendChild(cell);
-
-
             // add the row to the end of the table body
             tblBody.appendChild(row);
 
@@ -182,40 +170,37 @@
             // appends <table> into <body>
             document.body.appendChild(tbl)
 
-            newp = document.createElement("p");
-            newp.setAttribute("class", "small");
-            cellText = document.createTextNode("PHOTOS FOR LAST 24 HOURS");
-            newp.appendChild(cellText);
-            document.body.appendChild(newp)
-
         };
 
-        var draw_thumbnails = function () {
-            var my_dic = {{park_dic|tojson}};
+        var draw_thumbnails = function (my_dic) {
             var images_src = new Array();
-            var columns = 16, i, max_image_slots,
+            var columns = 8, i, max_image_slots,
                 table = document.createElement('table'),
                 tbody = table.appendChild(document.createElement('tbody')),
                 tr, td, img;
+
+            newp = document.createElement("p");
+            newp.setAttribute("class", "small");
+            cellText = document.createTextNode("PHOTOS FOR LAST 24 HOURS ("+my_dic.photos.length+"photos)");
+            newp.appendChild(cellText);
+            document.body.appendChild(newp);
+
             for (i=0; i<my_dic.photos.length; i++){
-                console.log(my_dic.photos[i].images.low_resolution.url);
                 images_src.push(my_dic.photos[i].images.low_resolution.url);
 
             }
-            max_image_slots = (columns * 2);
+            max_image_slots = images_src.length;
             table.setAttribute("border", "0");
             table.setAttribute("cellspacing", "0");
             table.setAttribute("cellpadding", "0");
-           if (images_src.length < columns){
-                max_image_slots = images_src.length;
-            }
+           
             for (i = 0; i < max_image_slots; i++) {
                 if (i % columns == 0) tr = tbody.appendChild(document.createElement('tr'));
 
                 img = document.createElement('img');
                 img.setAttribute("src", images_src[i]);
-                img.setAttribute("width", "50");
-                img.setAttribute("height", "50");
+                img.setAttribute("width", "100");
+                img.setAttribute("height", "100");
 
                 tr.appendChild(document.createElement('td').appendChild(img));
             }
@@ -232,31 +217,14 @@
 
 <body>
 
-
-<h1 class="sansserif"> Hello James! </h1>
-
-<p class="sansserif"> Here are the top priorities for today. </p>
-
-
-{{park_dic}}
-
 <script>
-    //{{park_dic}}
 
-    var xmlHttp = null;
-    xmlHttp = new XMLHttpRequest();
-    xmlHttp.open( "GET", "/trending", false );
-    xmlHttp.send( null );
-    var text = xmlHttp.responseText;
+    var my_dic = {{park_dic|tojson}};
+    console.log(my_dic)
+    show_stat(my_dic);
+    draw_thumbnails(my_dic);
+    draw_line();
 
-    var parks = JSON.parse(text);
-    var num_park_list = parks.count;
-    console.log(num_park_list)
-    for (var i = 0; i < 5; i++) {
-        show_stat("Central Park", "/img/M101.jpg");
-        draw_thumbnails();
-        draw_line();
-    }
 </script>
 
 </body>

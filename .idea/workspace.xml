@@ -8,7 +8,7 @@
     <file path="/Venue.py" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1385923690139" ignored="false" />
     <file path="/compute_summary.py" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386365242313" ignored="false" />
     <file path="/venue.py" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386274061445" ignored="false" />
-    <file path="$APPLICATION_HOME_DIR$/bin/~/PycharmProjects/GeoTopic/lda.py" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386635391500" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/bin/~/PycharmProjects/GeoTopic/lda.py" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386650654362" ignored="false" />
     <file path="/lda.py" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386635273865" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/bin/~/PycharmProjects/GeoTopic/prepare_data.py" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386630329884" ignored="false" />
     <file path="/server.py" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386268280968" ignored="false" />
@@ -30,9 +30,11 @@
     <file path="/pp_compute_stats.sh" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386451275967" ignored="false" />
     <file path="/.gitignore" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386451010269" ignored="false" />
     <file path="/single_park.html" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386605942793" ignored="false" />
-    <file path="/run2.py" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386644104384" ignored="false" />
+    <file path="/run2.py" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386651261695" ignored="false" />
     <file path="/park.html" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386612363572" ignored="false" />
-    <file path="/trending.html" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386618804392" ignored="false" />
+    <file path="/trending.html" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386649801819" ignored="false" />
+    <file path="/social_trace.wsgi" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386651417137" ignored="false" />
+    <file path="/parkbeat.wsgi" changelist="0b9cf8d8-4ccb-46e8-97f0-6c19c65bc2b0" time="1386651560830" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,10 +54,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="single_park.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/app/templates/single_park.html">
+      <file leaf-file-name="run.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/trash/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="438" selection-end="438" vertical-scroll-proportion="-13.75">
+            <state line="3" column="14" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/app/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="0" selection-start="93" selection-end="93" vertical-scroll-proportion="0.10608204">
+              <folding>
+                <element signature="e#0#33#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/app/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="0" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -64,21 +88,17 @@
       <file leaf-file-name="run.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="21" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
+            <state line="4" column="25" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="run2.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/app/run2.py">
+      <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="25" selection-start="2299" selection-end="2299" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#57#0" expanded="true" />
-              </folding>
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -86,16 +106,34 @@
       <file leaf-file-name="trending.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/app/templates/trending.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="208" column="0" selection-start="7618" selection-end="7618" vertical-scroll-proportion="-3.7916667">
+            <state line="221" column="10" selection-start="8185" selection-end="8185" vertical-scroll-proportion="-9.416667">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stats.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="parkbeat.wsgi" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/parkbeat.wsgi">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="33" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DOMCore.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavascriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DOMCore.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="183" column="19" selection-start="3490" selection-end="3490" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stats.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stats.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="24" selection-start="870" selection-end="870" vertical-scroll-proportion="0.67808217">
+            <state line="36" column="22" selection-start="909" selection-end="909" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#25#36#0" expanded="true" />
               </folding>
@@ -106,7 +144,7 @@
       <file leaf-file-name="park.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/app/templates/park.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="254" column="33" selection-start="8911" selection-end="8911" vertical-scroll-proportion="-9.4">
+            <state line="248" column="25" selection-start="8737" selection-end="8737" vertical-scroll-proportion="-7.6">
               <folding />
             </state>
           </provider>
@@ -122,22 +160,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/server/app/views.py" />
-        <option value="$PROJECT_DIR$/venue.py" />
-        <option value="$PROJECT_DIR$/compute_summary.py" />
-        <option value="$PROJECT_DIR$/open_gis.py" />
         <option value="$PROJECT_DIR$/transfer_data.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/cron/pp_transfer_data.sh" />
         <option value="$PROJECT_DIR$/cron/pp_compute_stats.sh" />
         <option value="$PROJECT_DIR$/server/app/templates/single_park.html" />
-        <option value="$PROJECT_DIR$/server/run.py" />
         <option value="$PROJECT_DIR$/server/run2.py" />
         <option value="$PROJECT_DIR$/server/app/templates/park.html.py" />
         <option value="$PROJECT_DIR$/server/app/templates/park.html" />
-        <option value="$PROJECT_DIR$/server/app/templates/trending.html" />
-        <option value="$PROJECT_DIR$/server/app/run2.py" />
         <option value="$PROJECT_DIR$/stats.py" />
+        <option value="$PROJECT_DIR$/server/app/templates/trending.html" />
+        <option value="$PROJECT_DIR$/server/run.py" />
+        <option value="$PROJECT_DIR$/server/app/run2.py" />
+        <option value="$PROJECT_DIR$/server/app/__init__.py" />
+        <option value="$PROJECT_DIR$/server/social_trace.wsgi" />
+        <option value="$PROJECT_DIR$/server/parkbeat.wsgi" />
+        <option value="$PROJECT_DIR$/server/app/views.py" />
       </list>
     </option>
   </component>
@@ -201,6 +239,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="trash" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="server" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -220,28 +272,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="parks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="parks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -276,6 +306,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/trash" />
       <recent name="$PROJECT_DIR$/server/app" />
       <recent name="$PROJECT_DIR$/gis_files" />
     </key>
@@ -510,47 +541,10 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gis_files/DPR_FunctionalParkland_001.shp.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="1816" selection-start="1816" selection-end="1816" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gis_files/DPR_FunctionalParkland_001.dbf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="41739" selection-start="41896" selection-end="41900" vertical-scroll-proportion="0.070754714">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venue.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="8" selection-start="49" selection-end="49" vertical-scroll-proportion="-2.3076923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Software/vir_env/lib/python2.7/site-packages/shapely/geometry/polygon.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="218" column="0" selection-start="4723" selection-end="7610" vertical-scroll-proportion="0.8185745">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/app/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="111" selection-end="111" vertical-scroll-proportion="0.15432099">
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -584,15 +578,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="21" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/app/templates/single_park.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="0" selection-start="438" selection-end="438" vertical-scroll-proportion="-13.75">
@@ -600,34 +585,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/app/run2.py">
+    <entry file="file://$PROJECT_DIR$/stats.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="25" selection-start="2299" selection-end="2299" vertical-scroll-proportion="0.0">
+        <state line="36" column="22" selection-start="909" selection-end="909" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#0#57#0" expanded="true" />
+            <element signature="e#25#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/app/templates/park.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="254" column="33" selection-start="8911" selection-end="8911" vertical-scroll-proportion="-9.4">
+        <state line="248" column="25" selection-start="8737" selection-end="8737" vertical-scroll-proportion="-7.6">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavascriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DOMCore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="183" column="19" selection-start="3490" selection-end="3490" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/app/templates/trending.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="208" column="0" selection-start="7618" selection-end="7618" vertical-scroll-proportion="-3.7916667">
+        <state line="221" column="10" selection-start="8185" selection-end="8185" vertical-scroll-proportion="-9.416667">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stats.py">
+    <entry file="file://$PROJECT_DIR$/trash/run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="24" selection-start="870" selection-end="870" vertical-scroll-proportion="0.67808217">
+        <state line="3" column="14" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#25#36#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="25" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/parkbeat.wsgi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="33" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="93" selection-end="93" vertical-scroll-proportion="0.10608204">
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
           </folding>
         </state>
       </provider>

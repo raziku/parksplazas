@@ -1,11 +1,11 @@
-from flask import Flask, request, jsonify,render_template
-from flask.ext.restful import Resource, Api
+from flask import render_template
 import json
+from app import app
 import pymongo
 import time
 
-app = Flask(__name__)
-api = Api(app)
+#app = Flask(__name__)
+#api = Api(app)
 
 
 
@@ -13,16 +13,23 @@ api = Api(app)
 def get_trending():
     conn = pymongo.MongoClient(host='grande.rutgers.edu')
     cursor_read = conn['parks_plazas']['most_trending']
-    park_id_list = [p for p in cursor_read.find().limit(1)][0]['most_trending']
-    print park_id_list
 
+    #park_id_list = [p for p in cursor_read.find().limit(1)][0]
+
+    park_id_list = [p for p in cursor_read.find().sort("created_time", -1).limit(1)][0]
+
+    park_id_list = park_id_list['most_trending']
+
+    print len(park_id_list)
+
+    """
     parks = []
     for park in park_id_list[:3]:
         print 'working on ', park
         parks.append(get_single_park_dic(park))
-
+    """
     return render_template(
-        "trending.html", parks = parks
+        "trending.html", parks = park_id_list
     )
 
 
@@ -70,5 +77,5 @@ def get_park(park_id):
 
 
 
-if __name__ == '__main__':
-    app.run(debug=True)
+#if __name__ == '__main__':
+#    app.run(debug=True)
