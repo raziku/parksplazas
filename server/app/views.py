@@ -1,5 +1,4 @@
-from flask import Flask, request, jsonify,render_template
-from flask.ext.restful import Resource, Api
+from flask import render_template
 import json
 from app import app
 import pymongo
