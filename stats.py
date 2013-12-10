@@ -25,13 +25,16 @@ def compute_stats():
     time_window = 3600*24
     n_days_average = 7
     n_most_trending = 100
+    
+    n_photos = 10
+    n_tweets = 10
 
     trending_list = []
     print 'In program'
     current_time = int(time.time())
     previous = current_time - time_window
 
-    for park in parks[:3]:
+    for park in parks:
         print current_time, previous, park.get_name(), park.get_id()
         cursor_read = conn['parks_plazas'][park.get_id()]
         #cursor_read = conn['parks_plazas']['M010']
@@ -69,11 +72,8 @@ def compute_stats():
             avg = np.average(cnt_by_day[1:])
             trend = cnt_by_day[0]*1.0/avg
 
-
-
-
-        trending_list.append([trend, cnt_by_day[0], photo_keywords, tweet_keywords, park.get_name()])
-
+        if cnt_by_day[0] >= 30:
+            trending_list.append([trend, cnt_by_day[0], photo_keywords, tweet_keywords, park.get_name(), photos[:n_photos], tweets[:n_tweets]])
 
         cursor_save = conn['parks_plazas'][park.get_id()]
         #cursor_save = conn['parks_plazas']['M010']
@@ -92,11 +92,24 @@ def compute_stats():
     print 'start trending...'
 
     most_trending = []
-
-    for n, idx in enumerate(sorted(range(len(trending_list)), key = lambda x: trending_list[x][0])[:n_most_trending]):
+    
+    for n, idx in enumerate(sorted(range(len(trending_list)), key = lambda x: trending_list[x][0], reverse=True)[:n_most_trending]):
     #for n, idx in enumerate(np.argsort(trending_list)[::-1][:n_most_trending]):
-        most_trending.append(parks[idx].get_id())
-
+        #most_trending.append(parks[idx].get_id())
+        print idx
+        #most_trending.append( trending_list[idx] )
+        
+        most_trending.append(
+                {
+                'trend': trending_list[idx][0], 
+                'n_tweets_and_photos': trending_list[idx][1],
+                'photo_keywords': trending_list[idx][2],
+                'tweet_keywords': trending_list[idx][3],
+                'park_name': trending_list[idx][4], 
+                'photos': trending_list[idx][5],
+                'tweets': trending_list[idx][6],
+                }
+                )
     cursor_save = conn['parks_plazas']['most_trending']
     cursor_save.insert({'datatype': 'most_trending', 'most_trending': most_trending, 'created_time': str(current_time)})
     conn.close()
