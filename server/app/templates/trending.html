@@ -139,7 +139,7 @@
             newp = document.createElement("p");
             newp.setAttribute("class", "large");
             //cellText = document.createTextNode("37%");
-            var n = (+my_dic.trend)*100;
+            var n = (+my_dic.trend)*100 - 100;
             cellText = document.createTextNode(n.toFixed(0)+"%");
             newp.appendChild(cellText);
             br = document.createElement("br");
@@ -155,11 +155,11 @@
             cell = document.createElement("td");
             newp = document.createElement("p");
             newp.setAttribute("class", "small");
-            cellText = document.createTextNode(my_dic.photos.length+" photos");
+            cellText = document.createTextNode(my_dic.n_tweets_and_photos+"  photos and tweets");
             newp.appendChild(cellText);
             br = document.createElement("br");
             newp.appendChild(br);
-            cellText = document.createTextNode(my_dic.tweets.length+" tweets");
+            cellText = document.createTextNode(" in the past 24 hours");
             newp.appendChild(cellText);
             cell.appendChild(newp);
             row.appendChild(cell);
@@ -233,7 +233,7 @@
     var num_park_list = my_dic.length;
     for (var i = 0; i < num_park_list; i++) {
     	console.log(i)
-        show_stat("Central Park", "/img/M101.jpg", my_dic[i]);
+        show_stat(my_dic[i].park_name, my_dic[i].photos[0].images.standard_resolution.url, my_dic[i]);
         console.log(i)
         draw_thumbnails(my_dic[i]);
         draw_line();
